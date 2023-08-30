@@ -444,7 +444,7 @@ function Dashboard() {
           <div className="coin-holdings-header">
             <span>Coin</span>
             <span>Price</span>
-            <span>24H</span>
+            <span className='removeMobile'>24H</span>
             <span>Holdings  
             <span>
             <button className='sortBtn'
@@ -472,7 +472,7 @@ function Dashboard() {
               </div>
             </div>  
             <span> ${coin.current_price} USD</span>
-            <span style={{ color: coin.price_change_percentage_24h < 0 ? 'red' : 'green' }}>
+            <span className='removeMobile' style={{ color: coin.price_change_percentage_24h < 0 ? 'red' : 'green' }}>
               {coin.price_change_percentage_24h.toFixed(2)}%
             </span>
             <div className="holdings-column">
@@ -644,7 +644,7 @@ function Dashboard() {
       </div>
 
       <div className='charts'> 
-      <div className='lineContainer' style={{ padding:'20px',  width:'75%' }}>
+      <div className='lineContainer' style={{ padding:'20px',  width:'75%', }}>
          <LineGraph  totalPortfolioValue ={totalPortfolioValue} 
          coinHoldings = {coinHoldings} 
          selectedCoin={selectedCoin}
