@@ -290,6 +290,7 @@
 
 .cta {
   padding: 4rem 0;
+  padding-top: 0rem;
 }
 
 .cta h2 {
@@ -1214,6 +1215,7 @@ h2 {
   }
   .loginTitle{
     padding: 0.25rem 0.5rem;
+    margin-right: 0rem;
   }
   .signTitle{
     padding: 0.25rem 0.5rem;
@@ -1235,6 +1237,10 @@ h2 {
 
 /*Smallest Screen */
 @media (max-width: 400px){
+  .loginLogo{
+    width: 2rem;
+    height: 2rem;
+  }
   .coin-details{
     display: none;
   }
@@ -1270,4 +1276,15 @@ h2 {
   .headerLogo{
     width: 13rem;
   }
+}
+@media (max-width: 350px){
+.removeMobile{
+  display: none;
+}
+.coin-holdings-header{
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.coin-holdings-row{
+  grid-template-columns: 2fr 2fr 2fr;
+}
 }
