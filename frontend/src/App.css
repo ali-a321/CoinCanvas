@@ -1266,6 +1266,7 @@ h2 {
   }
   .total-portfolio span{
     font-size: 1.5rem;
+    text-align: end;
   }
   .profit-loss.negative {
     font-size: 0.8rem;
